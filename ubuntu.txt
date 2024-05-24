@@ -1,0 +1,24 @@
+docker exec -it 069cbc005db3 /bin/bash
+
+
+
+docker run -p 9092:9092 apache/kafka:3.7.0
+
+
+
+list topics => ./bin/kafka-topics.sh --bootstrap-server=localhost:9092 --list
+
+
+docker stop $(docker ps -a -q)
+
+
+./bin/kafka-topics.sh --create --topic hello --bootstrap-server localhost:9092
+
+
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=123 gvenzl/oracle-xe
+
+docker run -d -p 1521:1521 -e ORACLE_PASSWORD=12345 gvenzl/oracle-xe
+
+CREATE USER ing_hub IDENTIFIED BY "123";
+grant connect to ing_hub;
+grant all privileges to ing_hub;
