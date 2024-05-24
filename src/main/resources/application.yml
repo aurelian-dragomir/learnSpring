@@ -4,6 +4,18 @@ spring:
     consumer:
       group-id: my_group
 
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/XE
+    username: ing_hub
+    password: 123
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa.hibernate.ddl-auto: none
+
+  flyway:
+    baselineOnMigrate: true
+    locations:
+      - db/migration
 
 logging:
   level:
