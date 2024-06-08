@@ -1,0 +1,24 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my_group
+
+  datasource:
+    url: jdbc:h2:mem:testdb;Mode=Oracle
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa.hibernate.ddl-auto: none
+
+  flyway:
+    baselineOnMigrate: true
+    locations:
+      - db/migration
+  h2:
+    console.enabled: true
+
+logging:
+  level:
+    org.apache.kafka: ERROR
