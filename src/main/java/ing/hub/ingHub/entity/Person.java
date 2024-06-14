@@ -1,11 +1,12 @@
 package ing.hub.ingHub.entity;
 
+import ing.hub.ingHub.model.Gender;
 import jakarta.persistence.*;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Getter
+@Data
 @NoArgsConstructor
 public class Person {
 
@@ -19,4 +20,11 @@ public class Person {
 
     @Column
     private String name;
+
+    @Column
+    private Integer age;
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 }

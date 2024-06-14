@@ -1,9 +1,10 @@
 package ing.hub.ingHub;
 
 import ing.hub.ingHub.entity.Person;
+import ing.hub.ingHub.model.Gender;
 import ing.hub.ingHub.model.PersonDto;
 import ing.hub.ingHub.repository.PersonRepository;
-import ing.hub.ingHub.service.PersonService;
+import ing.hub.ingHub.service.PersonJpaService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -22,13 +23,19 @@ public class PersonServiceMockTest {
     private PersonRepository personRepository;
 
     @InjectMocks
-    private PersonService personService;
+    private PersonJpaService personService;
 
     @Test
     public void testGetPerson() throws Throwable {
-        String name = "ion";
-        when(personRepository.findByName(any())).thenReturn(Optional.of(new Person(name)));
-        Optional<PersonDto> personDto = personService.findByName(name);
+        String name = "Aurelian";
+        Long id = 1L;
+        Person person = new Person();
+        person.setId(1L);
+        person.setName(name);
+        person.setAge(37);
+        person.setGender(Gender.MALE);
+        when(personRepository.findById(any())).thenReturn(Optional.of(person));
+        Optional<PersonDto> personDto = personService.findById(id);
         assertTrue(personDto.isPresent());
         assertTrue(personDto.orElseThrow(this::personNotFoundException).name().equals(name));
     }

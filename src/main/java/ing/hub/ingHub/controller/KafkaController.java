@@ -1,28 +1,32 @@
 package ing.hub.ingHub.controller;
 
-import ing.hub.ingHub.component.KafkaSender;
+import ing.hub.ingHub.model.PersonDetailsDto;
+import ing.hub.ingHub.model.PersonDto;
+import ing.hub.ingHub.service.PersonDetailsService;
+import jakarta.websocket.server.PathParam;
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/kafka")
+@AllArgsConstructor
 public class KafkaController {
 
-    private KafkaSender kafkaSender;
+    @Autowired
+    private PersonDetailsService personDetailsService;
 
-    public KafkaController(KafkaSender kafkaSender) {
-        this.kafkaSender = kafkaSender;
+    @PostMapping("/person-detail")
+    public void sendPersonDetails(@RequestBody PersonDetailsDto personDetails) {
+        personDetailsService.send(personDetails);
     }
 
-    @PostMapping
-    public String sendMessage(@RequestParam("msg") String message) {
-        try {
-            kafkaSender.send("hello", message);
-            return "OK";
-        } catch (Exception e) {
-            return "ERROR: " + e.getMessage();
-        }
+    @PostMapping("/{topicName}/person")
+    public void sendPerson(@PathParam("topicName") String topicName,
+                           @RequestBody PersonDto person) {
+
     }
 }

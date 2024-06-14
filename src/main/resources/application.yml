@@ -1,8 +1,8 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
-    consumer:
-      group-id: my_group
+    in-group-id: in_group
+    out-group-id: out_group
 
   datasource:
     url: jdbc:oracle:thin:@//localhost:1521/XE
@@ -18,5 +18,10 @@ spring:
       - db/migration
 
 logging:
+  level.root: info
   level:
     org.apache.kafka: ERROR
+    org.springframework.orm.jpa.JpaTransactionManager: trace
+    org.springframework.kafka.transaction: trace
+#    org.springframework.kafka.core.DefaultKafkaProducerFactory: trace
+    ing.hub.ingHub: debug
