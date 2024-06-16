@@ -10,7 +10,13 @@ spring:
     password: 123
     driver-class-name: oracle.jdbc.OracleDriver
 
-  jpa.hibernate.ddl-auto: none
+  jpa.hibernate:
+    ddl-auto: none
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
 
   flyway:
     baselineOnMigrate: true
@@ -23,5 +29,5 @@ logging:
     org.apache.kafka: ERROR
     org.springframework.orm.jpa.JpaTransactionManager: trace
     org.springframework.kafka.transaction: trace
-#    org.springframework.kafka.core.DefaultKafkaProducerFactory: trace
+    #    org.springframework.kafka.core.DefaultKafkaProducerFactory: trace
     ing.hub.ingHub: debug
