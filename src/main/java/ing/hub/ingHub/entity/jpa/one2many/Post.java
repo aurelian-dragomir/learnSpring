@@ -41,4 +41,11 @@ public class Post {
         this.comments.remove(comment);
         comment.setPost(null);
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "title='" + title + '\'' +
+                '}';
+    }
 }

@@ -7,8 +7,10 @@ import ing.hub.ingHub.repository.jpa.one2many.CommentRepository;
 import ing.hub.ingHub.repository.jpa.one2many.PostRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 
 import java.util.Arrays;
+import java.util.List;
 
 
 public class One2ManyTest extends BaseJpaTest {
@@ -123,6 +125,31 @@ public class One2ManyTest extends BaseJpaTest {
 
         executeInTransaction(() -> {
             commentRepository.findById(id);
+            return null;
+        });
+    }
+
+
+    @Test
+    public void testPaging() {
+        executeInTransaction(() -> {
+            for (int i = 1; i <= 10; i++) {
+                Post post = new Post("post title " + i);
+                Comment comment1 = new Comment("comment " + i);
+                Comment comment2 = new Comment("comment " + (i + 1));
+                post.addComments(Arrays.asList(comment1, comment2));
+                postRepository.save(post);
+            }
+            return null;
+        });
+
+        executeInTransaction(() -> {
+
+            List<Long> firstFivePosts = postRepository.getPostIdsPage(PageRequest.of(0, 5))
+                    .get().toList();
+            List<Post> posts = postRepository.getPostsForIds(firstFivePosts);
+            posts.forEach(System.out::println);
+
             return null;
         });
     }

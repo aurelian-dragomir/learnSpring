@@ -17,6 +17,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        query:
+          fail_on_pagination_over_collection_fetch: true
 
   flyway:
     baselineOnMigrate: true
