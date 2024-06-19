@@ -33,3 +33,4 @@ logging:
     org.springframework.kafka.transaction: trace
     #    org.springframework.kafka.core.DefaultKafkaProducerFactory: trace
     ing.hub.ingHub: debug
+    org.springframework.jdbc.core: TRACE
