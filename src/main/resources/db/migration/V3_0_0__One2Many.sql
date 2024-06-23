@@ -3,7 +3,7 @@ create table post(id   INTEGER generated always AS identity,
     constraint pk_post primary key(id)
 );
 
-create table comment(id   INTEGER generated always AS identity,
+create table comments(id   INTEGER generated always AS identity,
     text varchar(255) not null,
     post_id integer not null,
     constraint pk_comment primary key(id),
