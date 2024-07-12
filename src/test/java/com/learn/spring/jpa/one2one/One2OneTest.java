@@ -1,10 +1,10 @@
-package ing.hub.ingHub.jpa.one2one;
+package com.learn.spring.jpa.one2one;
 
-import ing.hub.ingHub.entity.jpa.one2one.Student;
-import ing.hub.ingHub.entity.jpa.one2one.Details;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.one2one.DetailsRepository;
-import ing.hub.ingHub.repository.jpa.one2one.StudentRepository;
+import com.learn.spring.entity.jpa.one2one.Student;
+import com.learn.spring.entity.jpa.one2one.Details;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.one2one.DetailsRepository;
+import com.learn.spring.repository.jpa.one2one.StudentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

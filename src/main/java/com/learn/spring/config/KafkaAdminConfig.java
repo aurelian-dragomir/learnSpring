@@ -1,4 +1,4 @@
-package ing.hub.ingHub.config;
+package com.learn.spring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

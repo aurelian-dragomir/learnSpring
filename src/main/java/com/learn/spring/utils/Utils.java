@@ -1,4 +1,4 @@
-package ing.hub.ingHub.utils;
+package com.learn.spring.utils;
 
 import java.util.Optional;
 

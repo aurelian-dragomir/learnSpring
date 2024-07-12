@@ -1,12 +1,12 @@
-package ing.hub.ingHub.jpa.many2many2;
+package com.learn.spring.jpa.many2many2;
 
-import ing.hub.ingHub.entity.jpa.many2many2.Customer;
-import ing.hub.ingHub.entity.jpa.many2many2.CustomerProduct;
-import ing.hub.ingHub.entity.jpa.many2many2.Product;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.many2many2.CustomerProductRepository;
-import ing.hub.ingHub.repository.jpa.many2many2.CustomerRepository;
-import ing.hub.ingHub.repository.jpa.many2many2.ProductRepository;
+import com.learn.spring.entity.jpa.many2many2.Customer;
+import com.learn.spring.entity.jpa.many2many2.CustomerProduct;
+import com.learn.spring.entity.jpa.many2many2.Product;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.many2many2.CustomerProductRepository;
+import com.learn.spring.repository.jpa.many2many2.CustomerRepository;
+import com.learn.spring.repository.jpa.many2many2.ProductRepository;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

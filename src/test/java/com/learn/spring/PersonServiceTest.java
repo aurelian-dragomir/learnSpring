@@ -1,7 +1,7 @@
 package com.learn.spring;
 
-import ing.hub.ingHub.entity.Person;
-import ing.hub.ingHub.repository.PersonRepository;
+import com.learn.spring.entity.Person;
+import com.learn.spring.repository.PersonRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;

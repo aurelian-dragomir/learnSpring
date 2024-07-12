@@ -1,17 +1,16 @@
-package ing.hub.ingHub.service;
+package com.learn.spring.service;
 
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.model.PersonDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import static ing.hub.ingHub.utils.Utils.*;
-
 import java.util.Optional;
 
-import static ing.hub.ingHub.utils.KafkaTopics.OUT_TOPIC;
+import static com.learn.spring.utils.KafkaTopics.OUT_TOPIC;
+import static com.learn.spring.utils.Utils.throwIfPresent;
 
 @Service
 public class PersonKafkaService {

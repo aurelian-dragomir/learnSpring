@@ -1,9 +1,9 @@
-package ing.hub.ingHub.jdbc.one2many;
+package com.learn.spring.one2many;
 
-import ing.hub.ingHub.entity.jdbc.one2many.CommentDto;
-import ing.hub.ingHub.entity.jdbc.one2many.PostDto;
-import ing.hub.ingHub.repository.jdbc.CommentDtoRepository;
-import ing.hub.ingHub.repository.jdbc.PostDtoRepository;
+import com.learn.spring.entity.jdbc.one2many.CommentDto;
+import com.learn.spring.entity.jdbc.one2many.PostDto;
+import com.learn.spring.repository.jdbc.CommentDtoRepository;
+import com.learn.spring.repository.jdbc.PostDtoRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Import({PostDtoRepository.class, CommentDtoRepository.class})
-public class One2ManyJdbcTest extends BaseJdbcTest {
+public class One2ManyJdbcTest extends com.learn.spring.jdbc.one2many.BaseJdbcTest {
 
     @Autowired
     private PostDtoRepository postRepository;

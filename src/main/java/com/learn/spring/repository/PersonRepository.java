@@ -1,8 +1,8 @@
-package ing.hub.ingHub.repository;
+package com.learn.spring.repository;
 
-import ing.hub.ingHub.entity.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import com.learn.spring.entity.Person;
 
 import java.util.Optional;
 

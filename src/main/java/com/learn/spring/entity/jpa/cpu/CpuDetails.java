@@ -1,4 +1,4 @@
-package ing.hub.ingHub.entity.jpa.cpu;
+package com.learn.spring.entity.jpa.cpu;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package ing.hub.ingHub.config;
+package com.learn.spring.config;
 
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.model.PersonDto;
 import jakarta.persistence.EntityManagerFactory;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.LongSerializer;

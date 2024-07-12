@@ -1,16 +1,17 @@
-package ing.hub.ingHub.service;
+package com.learn.spring.service;
 
-import ing.hub.ingHub.entity.Person;
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
-import ing.hub.ingHub.repository.PersonRepository;
+import com.learn.spring.entity.Person;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.model.PersonDto;
+import com.learn.spring.repository.PersonRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
-import static ing.hub.ingHub.utils.Utils.throwIfPresent;
+
+import static com.learn.spring.utils.Utils.throwIfPresent;
 
 @Service
 @AllArgsConstructor

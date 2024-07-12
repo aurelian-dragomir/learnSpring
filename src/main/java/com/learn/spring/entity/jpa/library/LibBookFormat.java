@@ -1,4 +1,4 @@
-package ing.hub.ingHub.entity.jpa.library;
+package com.learn.spring.entity.jpa.library;
 
 import jakarta.persistence.*;
 import lombok.Getter;

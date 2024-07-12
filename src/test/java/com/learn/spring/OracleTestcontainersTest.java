@@ -1,9 +1,9 @@
 package com.learn.spring;
 
-import ing.hub.ingHub.model.Gender;
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
-import ing.hub.ingHub.service.PersonJpaService;
+import com.learn.spring.model.Gender;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.model.PersonDto;
+import com.learn.spring.service.PersonJpaService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

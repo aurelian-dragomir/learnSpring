@@ -1,10 +1,10 @@
 package com.learn.spring;
 
-import ing.hub.ingHub.entity.Person;
-import ing.hub.ingHub.model.Gender;
-import ing.hub.ingHub.model.PersonDto;
-import ing.hub.ingHub.repository.PersonRepository;
-import ing.hub.ingHub.service.PersonJpaService;
+import com.learn.spring.entity.Person;
+import com.learn.spring.model.Gender;
+import com.learn.spring.model.PersonDto;
+import com.learn.spring.repository.PersonRepository;
+import com.learn.spring.service.PersonJpaService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

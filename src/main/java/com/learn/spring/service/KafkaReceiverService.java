@@ -1,15 +1,13 @@
-package ing.hub.ingHub.service;
+package com.learn.spring.service;
 
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
+import com.learn.spring.model.PersonDto;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.Optional;
+import com.learn.spring.model.PersonDetailsDto;
 
 @Service
 @AllArgsConstructor

@@ -1,8 +1,8 @@
-package ing.hub.ingHub.controller;
+package com.learn.spring.controller;
 
-import ing.hub.ingHub.model.BmwCar;
-import ing.hub.ingHub.model.Car;
-import ing.hub.ingHub.model.Dacia;
+import com.learn.spring.model.BmwCar;
+import com.learn.spring.model.Car;
+import com.learn.spring.model.Dacia;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

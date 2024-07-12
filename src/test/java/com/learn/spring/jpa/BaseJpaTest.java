@@ -1,4 +1,4 @@
-package ing.hub.ingHub.jpa;
+package com.learn.spring.jpa;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

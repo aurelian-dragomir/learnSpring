@@ -1,4 +1,4 @@
-package ing.hub.ingHub.model;
+package com.learn.spring.model;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

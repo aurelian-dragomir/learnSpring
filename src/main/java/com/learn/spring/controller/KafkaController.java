@@ -1,8 +1,8 @@
-package ing.hub.ingHub.controller;
+package com.learn.spring.controller;
 
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.model.PersonDto;
-import ing.hub.ingHub.service.PersonDetailsService;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.model.PersonDto;
+import com.learn.spring.service.PersonDetailsService;
 import jakarta.websocket.server.PathParam;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

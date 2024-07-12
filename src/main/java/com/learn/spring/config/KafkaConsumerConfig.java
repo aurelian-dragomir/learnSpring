@@ -1,6 +1,6 @@
-package ing.hub.ingHub.config;
+package com.learn.spring.config;
 
-import ing.hub.ingHub.model.PersonDto;
+import com.learn.spring.model.PersonDto;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.LongDeserializer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +42,7 @@ public class KafkaConsumerConfig {
         configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
         configProps.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG, "read_committed");
         configProps.put(JsonDeserializer.USE_TYPE_INFO_HEADERS, false);
-        configProps.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "ing.hub.ingHub.model.PersonDetailsDto");
+        configProps.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "com.learn.spring.model.PersonDetailsDto");
 
         return new DefaultKafkaConsumerFactory<>(configProps);
     }
@@ -65,7 +65,7 @@ public class KafkaConsumerConfig {
         configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
         configProps.put(JsonDeserializer.USE_TYPE_INFO_HEADERS, false);
         configProps.put(ConsumerConfig.ISOLATION_LEVEL_CONFIG, "read_committed");
-        configProps.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "ing.hub.ingHub.model.PersonDto");
+        configProps.put(JsonDeserializer.VALUE_DEFAULT_TYPE, "com.learn.spring.model.PersonDto");
         return new DefaultKafkaConsumerFactory<>(configProps);
     }
 

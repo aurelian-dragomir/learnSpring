@@ -1,6 +1,6 @@
-package ing.hub.ingHub.repository.jdbc;
+package com.learn.spring.repository.jdbc;
 
-import ing.hub.ingHub.entity.jdbc.one2many.CommentDto;
+import com.learn.spring.entity.jdbc.one2many.CommentDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

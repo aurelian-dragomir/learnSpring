@@ -1,4 +1,4 @@
-package ing.hub.ingHub.cucumber.configurations;
+package com.learn.spring.cucumber.configurations;
 
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;

@@ -1,14 +1,14 @@
-package ing.hub.ingHub.jpa.library;
+package com.learn.spring.jpa.library;
 
-import ing.hub.ingHub.entity.jpa.library.LibAuthor;
-import ing.hub.ingHub.entity.jpa.library.LibBook;
-import ing.hub.ingHub.entity.jpa.library.LibBookDetail;
-import ing.hub.ingHub.entity.jpa.library.LibBookFormat;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.library.LibAuthorRepository;
-import ing.hub.ingHub.repository.jpa.library.LibBookDetailRepository;
-import ing.hub.ingHub.repository.jpa.library.LibBookFormatRepository;
-import ing.hub.ingHub.repository.jpa.library.LibBookRepository;
+import com.learn.spring.entity.jpa.library.LibAuthor;
+import com.learn.spring.entity.jpa.library.LibBook;
+import com.learn.spring.entity.jpa.library.LibBookDetail;
+import com.learn.spring.entity.jpa.library.LibBookFormat;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.library.LibAuthorRepository;
+import com.learn.spring.repository.jpa.library.LibBookDetailRepository;
+import com.learn.spring.repository.jpa.library.LibBookFormatRepository;
+import com.learn.spring.repository.jpa.library.LibBookRepository;
 import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package ing.hub.ingHub.utils;
+package com.learn.spring.utils;
 
 public class KafkaTopics {
     public static final String IN_TOPIC = "in";

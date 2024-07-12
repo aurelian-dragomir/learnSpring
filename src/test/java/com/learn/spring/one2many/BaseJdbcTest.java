@@ -1,6 +1,6 @@
-package ing.hub.ingHub.jdbc.one2many;
+package com.learn.spring.jdbc.one2many;
 
-import ing.hub.ingHub.repository.jdbc.PostDtoRepository;
+import com.learn.spring.repository.jdbc.PostDtoRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.JdbcTest;

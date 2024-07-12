@@ -1,6 +1,6 @@
-package ing.hub.ingHub.repository.jpa.one2many;
+package com.learn.spring.repository.jpa.one2many;
 
-import ing.hub.ingHub.entity.jpa.one2many.Post;
+import com.learn.spring.entity.jpa.one2many.Post;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

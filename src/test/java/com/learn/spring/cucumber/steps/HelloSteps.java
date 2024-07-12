@@ -1,4 +1,4 @@
-package ing.hub.ingHub.cucumber.steps;
+package com.learn.spring.cucumber.steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

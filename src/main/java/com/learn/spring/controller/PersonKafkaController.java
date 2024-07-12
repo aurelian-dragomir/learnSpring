@@ -1,7 +1,7 @@
-package ing.hub.ingHub.controller;
+package com.learn.spring.controller;
 
-import ing.hub.ingHub.model.PersonDetailsDto;
-import ing.hub.ingHub.service.PersonKafkaService;
+import com.learn.spring.model.PersonDetailsDto;
+import com.learn.spring.service.PersonKafkaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

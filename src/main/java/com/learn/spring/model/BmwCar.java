@@ -1,4 +1,4 @@
-package ing.hub.ingHub.model;
+package com.learn.spring.model;
 
 public class BmwCar implements Car{
     @Override

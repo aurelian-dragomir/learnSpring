@@ -1,6 +1,6 @@
-package ing.hub.ingHub.repository.jpa.cpu;
+package com.learn.spring.repository.jpa.cpu;
 
-import ing.hub.ingHub.entity.jpa.cpu.Cpu;
+import com.learn.spring.entity.jpa.cpu.Cpu;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

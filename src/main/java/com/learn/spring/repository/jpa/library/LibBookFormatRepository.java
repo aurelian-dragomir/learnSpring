@@ -1,6 +1,6 @@
-package ing.hub.ingHub.repository.jpa.library;
+package com.learn.spring.repository.jpa.library;
 
-import ing.hub.ingHub.entity.jpa.library.LibBookFormat;
+import com.learn.spring.entity.jpa.library.LibBookFormat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package ing.hub.ingHub.entity.jpa.one2many;
+package com.learn.spring.entity.jpa.one2many;
 
 import jakarta.persistence.*;
 import lombok.Getter;

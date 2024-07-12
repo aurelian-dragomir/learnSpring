@@ -1,5 +1,6 @@
-package ing.hub.ingHub.entity.jpa.library;
+package com.learn.spring.entity.jpa.library;
 
+import com.learn.spring.entity.jpa.library.LibBookFormat;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

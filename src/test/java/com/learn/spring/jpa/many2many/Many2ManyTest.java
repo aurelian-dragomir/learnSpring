@@ -1,10 +1,10 @@
-package ing.hub.ingHub.jpa.many2many;
+package com.learn.spring.jpa.many2many;
 
-import ing.hub.ingHub.entity.jpa.many2many.Author;
-import ing.hub.ingHub.entity.jpa.many2many.Book;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.many2many.AuthorRepository;
-import ing.hub.ingHub.repository.jpa.many2many.BookRepository;
+import com.learn.spring.entity.jpa.many2many.Author;
+import com.learn.spring.entity.jpa.many2many.Book;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.many2many.AuthorRepository;
+import com.learn.spring.repository.jpa.many2many.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

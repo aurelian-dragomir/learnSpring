@@ -1,8 +1,8 @@
 package com.learn.spring;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import ing.hub.ingHub.controller.CarController;
-import ing.hub.ingHub.model.Car;
+import com.learn.spring.controller.CarController;
+import com.learn.spring.model.Car;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

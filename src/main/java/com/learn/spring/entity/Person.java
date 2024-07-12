@@ -1,9 +1,9 @@
-package ing.hub.ingHub.entity;
+package com.learn.spring.entity;
 
-import ing.hub.ingHub.model.Gender;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import com.learn.spring.model.Gender;
 
 @Entity
 @Data

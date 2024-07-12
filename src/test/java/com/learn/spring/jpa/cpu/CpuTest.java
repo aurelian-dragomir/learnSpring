@@ -1,10 +1,10 @@
-package ing.hub.ingHub.jpa.cpu;
+package com.learn.spring.jpa.cpu;
 
-import ing.hub.ingHub.entity.jpa.cpu.Cpu;
-import ing.hub.ingHub.entity.jpa.cpu.CpuDetails;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.cpu.CpuDetailsRepository;
-import ing.hub.ingHub.repository.jpa.cpu.CpuRepository;
+import com.learn.spring.entity.jpa.cpu.Cpu;
+import com.learn.spring.entity.jpa.cpu.CpuDetails;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.cpu.CpuDetailsRepository;
+import com.learn.spring.repository.jpa.cpu.CpuRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

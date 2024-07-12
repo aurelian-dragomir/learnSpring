@@ -1,4 +1,4 @@
-package ing.hub.ingHub.repository.jdbc;
+package com.learn.spring.repository.jdbc;
 
 import org.springframework.stereotype.Repository;
 

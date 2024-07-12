@@ -1,4 +1,4 @@
-package ing.hub.ingHub.entity.jdbc.one2many;
+package com.learn.spring.entity.jdbc.one2many;
 
 import lombok.Builder;
 import lombok.Data;

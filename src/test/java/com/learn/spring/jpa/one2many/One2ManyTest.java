@@ -1,10 +1,10 @@
-package ing.hub.ingHub.jpa.one2many;
+package com.learn.spring.jpa.one2many;
 
-import ing.hub.ingHub.entity.jpa.one2many.Comment;
-import ing.hub.ingHub.entity.jpa.one2many.Post;
-import ing.hub.ingHub.jpa.BaseJpaTest;
-import ing.hub.ingHub.repository.jpa.one2many.CommentRepository;
-import ing.hub.ingHub.repository.jpa.one2many.PostRepository;
+import com.learn.spring.entity.jpa.one2many.Comment;
+import com.learn.spring.entity.jpa.one2many.Post;
+import com.learn.spring.jpa.BaseJpaTest;
+import com.learn.spring.repository.jpa.one2many.CommentRepository;
+import com.learn.spring.repository.jpa.one2many.PostRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;

@@ -1,4 +1,4 @@
-package ing.hub.ingHub.controller;
+package com.learn.spring.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
