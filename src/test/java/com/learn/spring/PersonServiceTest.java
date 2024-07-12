@@ -1,4 +1,4 @@
-package ing.hub.ingHub;
+package com.learn.spring;
 
 import ing.hub.ingHub.entity.Person;
 import ing.hub.ingHub.repository.PersonRepository;

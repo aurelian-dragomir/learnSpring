@@ -1,4 +1,4 @@
-package ing.hub.ingHub;
+package com.learn.spring;
 
 import ing.hub.ingHub.model.Gender;
 import ing.hub.ingHub.model.PersonDetailsDto;

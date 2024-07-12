@@ -1,4 +1,4 @@
-package ing.hub.ingHub;
+package com.learn.spring;
 
 import ing.hub.ingHub.model.Car;
 import org.junit.jupiter.api.Test;

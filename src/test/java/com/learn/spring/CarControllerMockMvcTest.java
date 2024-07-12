@@ -1,4 +1,4 @@
-package ing.hub.ingHub;
+package com.learn.spring;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import ing.hub.ingHub.controller.CarController;

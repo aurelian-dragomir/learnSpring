@@ -1,4 +1,4 @@
-package ing.hub.ingHub;
+package com.learn.spring;
 
 import lombok.Getter;
 import org.springframework.kafka.annotation.KafkaListener;
